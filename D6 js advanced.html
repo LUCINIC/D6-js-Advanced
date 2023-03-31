@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User List</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    /> 
+    
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1>User List</h1>
+      <div class="form-group">
+        <label for="filter-dropdown">Filter by:</label>
+        <select class="form-control" id="filter-dropdown">
+          <option value="name">Name</option>
+          <option value="username">Username</option>
+          <option value="email">Email</option>
+        </select>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Username</th>
+            <th scope="col">Email</th>
+          </tr>
+        </thead>
+        <tbody id="user-table-body"></tbody>
+      </table>
+    </div> 
+    <div>
+        <label for="filter-input">Filter users by name, username, or email:</label>
+        <input type="text" id="filter-input" />
+      
+        <label for="filter-dropdown">Filter by:</label>
+        <select id="filter-dropdown">
+          <option value="name">Name</option>
+          <option value="username">Username</option>
+          <option value="email">Email</option>
+        </select>
+      
+        <button id="filter-button">Filter</button>
+      </div>
+      
+      <div id="users-container">
+        <table id="users-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Username</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+           
+          </tbody>
+        </table>
+      </div>
+      
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+      integrity="sha384-DeF33bcY5HQLk+iFZg9XLMv5d/Mpi18oyDJO6RpudEyC1wULwlJ+oYQz+rJAGLFP"
+      crossorigin="anonymous"
+    ></script>
+    <script src="D6 js advanced.js"></script> 
+    
+</body> 
+
